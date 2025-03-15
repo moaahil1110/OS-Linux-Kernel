@@ -30,8 +30,8 @@ A Linux project demonstrating process hierarchy creation and memory map analysis
 ## Installation
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/your-username/jackfruit-problem.git
-cd jackfruit-problem
+git clone https://github.com/moaahil1110/OS-Linux-Kernel.git
+cd OS-Linux-Kernel
 ```
 **2. Compile components:**
 ```bash
