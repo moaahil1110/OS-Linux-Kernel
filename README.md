@@ -105,8 +105,10 @@ sudo dmesg | tail
 ```
 
 **Optional: If you want to test everything again:**
+
 -Test Everything Again:
-    -Load the module, run the user program, and unload the module to ensure everything works as expected.
+
+  -Load the module, run the user program, and unload the module to ensure everything works as expected.
 
 
 
