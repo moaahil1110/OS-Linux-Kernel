@@ -88,5 +88,5 @@ gcc process_tree.c -o process_tree
 ```
 ## Final Output
 -**The final output should look like:**
-<img src="/Users/hafizmohammedaahil/Documents/University-Related-Stuff/SEM-4/OS/Jackfruit-Problem/1-OS"></img>
+
 
