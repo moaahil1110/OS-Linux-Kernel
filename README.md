@@ -1,4 +1,4 @@
-# OS-Linux-Kernel Process Tracking System
+# OS-Linux-Kernel: Process Tracking System
 
 A Linux project demonstrating process hierarchy creation and memory map analysis, combining a kernel module and user-space program.
 
