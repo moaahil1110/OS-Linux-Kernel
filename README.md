@@ -92,6 +92,24 @@ gcc User-Program-Code.c -o User-Program-Code
   #10b.Run (no sudo needed)
 ./User-Program-Code
 ```
+
+**3. Once done, do the following:**
+```bash
+#1. Unload the Module
+sudo rmmod process_tracker
+```
+
+```bash
+#2. Verify Unload: Check the kernel logs to confirm the module was unloaded:
+sudo dmesg | tail
+```
+
+**Optional: If you want to test everything again:**
+-Test Everything Again:
+    -Load the module, run the user program, and unload the module to ensure everything works as expected.
+
+
+
 ## Output Demonstration:
 
 Here’s a sample output showing the process tree and memory maps:
