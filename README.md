@@ -90,10 +90,14 @@ gcc process_tree.c -o process_tree
 
 Here’s a sample output showing the process tree and memory maps:
 
+**1.**
 ![Process Tree Output](./1-OS.png)
 
+**2.**
 ![Process Tree Output](./2-OS.png)
 
+**3.**
 ![Process Tree Output](./3-OS.png)
 
+**4.**
 ![Process Tree Output](./4-OS.png)
