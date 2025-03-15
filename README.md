@@ -1,4 +1,4 @@
-<img width="1432" alt="1-OS" src="https://github.com/user-attachments/assets/ee06c424-a23a-4396-8b91-c89b713d6ff8" /># OS-Linux-Kernel Process Tracking System
+# OS-Linux-Kernel
 
 A Linux project demonstrating process hierarchy creation and memory map analysis, combining a kernel module and user-space program.
 
@@ -88,5 +88,5 @@ gcc process_tree.c -o process_tree
 ```
 ## Final Output
 -**The final output should look like:**
-
+<img width="1432" alt="1-OS" src="https://github.com/user-attachments/assets/ee06c424-a23a-4396-8b91-c89b713d6ff8" /># OS-Linux-Kernel Process Tracking System
 
