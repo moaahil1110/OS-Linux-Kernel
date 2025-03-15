@@ -47,7 +47,7 @@ mkdir ~/kernel_project && cd ~/kernel_project
 
 ```bash
 #2. Write down the Kernel Module (in Ubuntu Terminal)
-nano process_tracker.c
+nano Kernel-Module.c
 ```
 
 ```bash
@@ -67,7 +67,7 @@ ls -l
 
 ```bash
 #6. Load the module
-sudo insmod process_tracker.ko
+sudo insmod Kernel-Module.ko
 ```
 
 ```bash
@@ -77,20 +77,20 @@ sudo dmesg | tail
 
 ```bash
 #8. Type/Paste the User Program Code after the following command
-nano process_tree.c
+nano User-Program-Code.c
 ```
 
 ```bash
 #9. Verify if the code is present
-cat process_tree.c
+cat User-Program-Code.c
 ```
 ```bash
 #10. Compile and Run
   #10a.Compile
-gcc process_tree.c -o process_tree
+gcc User-Program-Code.c -o User-Program-Code
 
   #10b.Run (no sudo needed)
-./process_tree
+./User-Program-Code
 ```
 ## Output Demonstration:
 
