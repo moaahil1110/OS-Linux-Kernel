@@ -86,7 +86,14 @@ gcc process_tree.c -o process_tree
   #10b.Run (no sudo needed)
 ./process_tree
 ```
-## Final Output
--**The final output should look like:**
-<img width="1432" alt="1-OS" src="https://github.com/user-attachments/assets/ee06c424-a23a-4396-8b91-c89b713d6ff8" /># OS-Linux-Kernel Process Tracking System
+## Output Demonstration:
 
+Here’s a sample output showing the process tree and memory maps:
+
+![Process Tree Output](./1-OS.png)
+
+![Process Tree Output](./2-OS.png)
+
+![Process Tree Output](./3-OS.png)
+
+![Process Tree Output](./4-OS.png)
