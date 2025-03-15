@@ -2,6 +2,12 @@
 
 A Linux project demonstrating process hierarchy creation and memory map analysis, combining a kernel module and user-space program.
 
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Output Demonstration](#output-demonstration)
+
 ## Features
 
 - **Kernel Module**
