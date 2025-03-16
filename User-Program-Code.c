@@ -20,12 +20,12 @@ void write_pid_info() {
 }
 
 void allocate_memory() {
-    char *buffer = malloc(1024 * 1024); // Allocate 1MB
+    char *buffer = malloc(1024 * 1024);
     if (buffer == NULL) {
         perror("malloc");
         exit(EXIT_FAILURE);
     }
-    memset(buffer, 0, 1024 * 1024); // Prevent optimization
+    memset(buffer, 0, 1024 * 1024);
 }
 
 void create_children(int level) {
@@ -36,11 +36,11 @@ void create_children(int level) {
         if (pid < 0) {
             perror("fork");
             exit(EXIT_FAILURE);
-        } else if (pid == 0) { // Child
+        } else if (pid == 0) {
             write_pid_info();
             allocate_memory();
             create_children(level - 1);
-            sleep(10); // Keep process alive
+            sleep(10);
             exit(EXIT_SUCCESS);
         }
     }
@@ -76,19 +76,17 @@ void print_tree(struct Process *processes, int count, pid_t current_pid, int dep
 }
 
 int main() {
-    // Initialize PID file
     FILE *file = fopen(FILENAME, "w");
     if (file == NULL) {
         perror("fopen");
         return EXIT_FAILURE;
     }
     fclose(file);
-    write_pid_info(); // Write main process info
+    write_pid_info();
 
-    create_children(2); // Create 2 levels of children
-    sleep(2); // Allow time for all processes to write
+    create_children(2);
+    sleep(2);
 
-    // Read PID info
     file = fopen(FILENAME, "r");
     if (!file) {
         perror("fopen");
@@ -105,11 +103,9 @@ int main() {
     }
     fclose(file);
 
-    // Find main PID (root)
     pid_t main_pid = getpid();
     printf("%d\n", main_pid);
 
-    // Print main process maps
     char path[256];
     snprintf(path, sizeof(path), "/proc/%d/maps", main_pid);
     FILE *maps_file = fopen(path, "r");
@@ -123,7 +119,6 @@ int main() {
 
     print_tree(processes, count, main_pid, 0);
 
-    // Cleanup: Terminate all child processes
     for (int i = 0; i < count; i++) {
         if (processes[i].pid != main_pid) {
             kill(processes[i].pid, SIGTERM);
